@@ -370,7 +370,7 @@ public class mainGui extends javax.swing.JFrame {
         PanelSelectCipher.setBorder(javax.swing.BorderFactory.createTitledBorder("Algoritmos de cifrado"));
         PanelSelectCipher.setName(""); // NOI18N
 
-        ComboBoxAlgorithms.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Desplazamiento", "Sustitucion", "Afin", "Vigenere", "Hill", "Permutacion", "DES-S" }));
+        ComboBoxAlgorithms.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Desplazamiento", "Sustitucion", "Afin", "Vigenere", "Hill", "Permutacion", "DES-S", "DES", "AES" }));
 
         javax.swing.GroupLayout PanelSelectCipherLayout = new javax.swing.GroupLayout(PanelSelectCipher);
         PanelSelectCipher.setLayout(PanelSelectCipherLayout);
@@ -386,7 +386,7 @@ public class mainGui extends javax.swing.JFrame {
             .addGroup(PanelSelectCipherLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(ComboBoxAlgorithms, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(37, Short.MAX_VALUE))
+                .addContainerGap(26, Short.MAX_VALUE))
         );
 
         jMenu1.setText("Archivo");
@@ -430,7 +430,8 @@ public class mainGui extends javax.swing.JFrame {
                     .addComponent(PanelClearText, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(PanelEncryptText, javax.swing.GroupLayout.DEFAULT_SIZE, 240, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(PanelSelectCipher, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(PanelSelectCipher, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
         pack();
@@ -460,8 +461,16 @@ public class mainGui extends javax.swing.JFrame {
                 dialogPermutation.setVisible(true);
                 break;
             case 6:
-                 DialogDESS dialogDESS = new DialogDESS(new javax.swing.JFrame(), true, ciOrde);
+                DialogDESS dialogDESS = new DialogDESS(new javax.swing.JFrame(), true, ciOrde);
                 dialogDESS.setVisible(true);
+                break;
+            case 7:
+                DialogDES dialogDES = new DialogDES(new javax.swing.JFrame(), true, ciOrde);
+                dialogDES.setVisible(true);
+                break;
+            case 8:
+                DialogAES dialogAES = new DialogAES(new javax.swing.JFrame(), true, ciOrde);
+                dialogAES.setVisible(true);
                 break;
         }
     }//GEN-LAST:event_ButtonCryptActionPerformed
@@ -488,6 +497,14 @@ public class mainGui extends javax.swing.JFrame {
             case 5:
                 DialogPermutation dialogPermutation = new DialogPermutation(new javax.swing.JFrame(), true, ciOrde);
                 dialogPermutation.setVisible(true);
+                break;
+            case 7:
+                DialogDES dialogDES = new DialogDES(new javax.swing.JFrame(), true, ciOrde);
+                dialogDES.setVisible(true);
+                break;
+            case 8:
+                DialogAES dialogAES = new DialogAES(new javax.swing.JFrame(), true, ciOrde);
+                dialogAES.setVisible(true);
                 break;
         }
     }//GEN-LAST:event_ButtonDecryptActionPerformed

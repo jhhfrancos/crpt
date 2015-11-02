@@ -77,6 +77,12 @@ public class Cryptos {
             case 6:
                 cSystem = new DESSimpCipher(text, ciph, keyVigenere);
                 break;
+            case 7:
+                cSystem = new DESCipher(text, ciph, keyVigenere);
+                break;
+            case 8:
+                cSystem = new AESCipher(text, ciph, keyVigenere);
+                break;
         }
     }
     

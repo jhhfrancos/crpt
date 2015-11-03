@@ -2,6 +2,16 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/Users/Jhh/Documents/NetBeansProjects/Crypto/src/gui/mainGui.java</file>
+            <file>file:/C:/Users/Jhh/Documents/NetBeansProjects/Crypto/src/control/ShiftCipher.java</file>
+            <file>file:/C:/Users/Jhh/Documents/NetBeansProjects/Crypto/src/control/DESCipher.java</file>
+            <file>file:/C:/Users/Jhh/Documents/NetBeansProjects/Crypto/src/gui/DialogDES.java</file>
+            <file>file:/C:/Users/Jhh/Documents/NetBeansProjects/Crypto/src/gui/DialogDESS.java</file>
+            <file>file:/C:/Users/Jhh/Documents/NetBeansProjects/Crypto/src/control/AESCipher.java</file>
+            <file>file:/C:/Users/Jhh/Documents/NetBeansProjects/Crypto/src/control/Cryptos.java</file>
+            <file>file:/C:/Users/Jhh/Documents/NetBeansProjects/Crypto/src/control/ImageCipher.java</file>
+            <file>file:/C:/Users/Jhh/Documents/NetBeansProjects/Crypto/src/gui/DialogAES.java</file>
+        </group>
     </open-files>
 </project-private>
